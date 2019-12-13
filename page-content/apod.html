@@ -5,17 +5,17 @@
 
   $.get(url, (response) => {
     console.log(response);
-  }).done(function(data) {
+  }).done(function() {
     var addTo = document.getElementById("apodContent");
     addTo.write(
     <div class="mdc-card demo-card">
       <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
         <div class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(https://apod.nasa.gov/apod/image/1912/gem16otjcc1100.jpg);"></div>
         <div class="demo-card__primary">
-          <h2 class="demo-card__title mdc-typography mdc-typography--headline6">data.title</h2>
-          <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">data.copyright</h3>
+          <h2 class="demo-card__title mdc-typography mdc-typography--headline6">response.title</h2>
+          <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">response.copyright</h3>
         </div>
-        <div class="demo-card__secondary mdc-typography mdc-typography--body2">data.date</div>
+        <div class="demo-card__secondary mdc-typography mdc-typography--body2">response.date</div>
       </div>
       <div class="mdc-card__actions">
         <div class="mdc-card__action-buttons">
