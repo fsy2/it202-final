@@ -5,7 +5,7 @@
 
   $.get(url, (response) => {
     console.log(response);
-  }).done(function() {
+  }).done(function(response) {
     var addTo = document.getElementById("apodContent");
     addTo.write(
     <div class="mdc-card demo-card">
