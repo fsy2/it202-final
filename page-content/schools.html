@@ -2,7 +2,10 @@
 
 
 <!-- add a select control to let users choose a school category;  you can hard-code the options or dynamically populate them from the primaryCategories variable below-->
-
+<input type="checkbox" name="vehicle1" value="Elementary"> Elementary<br>
+<input type="checkbox" name="vehicle2" value="Middle School" checked> Middle School<br>
+<input type="checkbox" name="vehicle3" value="High School"> High School<br><br>
+<input type="submit" value="Submit">
 
 <button id="searchSchools" class="mdc-button mdc-button--raised">
   <div class="mdc-button__ripple"></div>
@@ -22,7 +25,7 @@
             <span class="mdc-list-item__primary-text"></span>
             <span class="mdc-list-item__secondary-text"></span></span></li>
     <li role="separator" class="mdc-list-divider template"></li>
-  </ul> 
+  </ul>
 
 
 
@@ -70,8 +73,8 @@
 
         // append to list
         $("ul#listSchools").append(dividerClone);
-        
-        
+
+
         $("ul#listSchools").append(clone);
 
       });
